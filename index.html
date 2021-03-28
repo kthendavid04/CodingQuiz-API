@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coding Quiz Game</title>
+
+    <link rel="stylesheet" href= "Assets/CSS/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Luckiest+Guy&family=Train+One&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <div class="scores"><a href="highscores.html">Highscores</a></div>
+
+        <div class="timer">Time: <span id="timer">0</span></div>
+
+        <div class= "wrapper">
+            <div id="start-screen" class="start">
+                <h2 class="fontOne">Coding Quiz</h2>
+                <h1 class="fontOne">::CHALLENGE::</h1> 
+                <P class= "fontTwo">
+                 Answer as many questions as you can before the timer runs out.
+                    Be careful! If you answer incorrectly, you will lose time...
+                </P>
+              <button id="start">Start Game</button>
+            </div>
+        
+            <div class="fontTwo" id="questions" class="hide" >
+                <h2 id="questions-title"></h2>
+                <div id="choices" class ="choices"></div>
+            </div>
+
+         <div id="end-screen" class="hide">
+             <h2 class="fontTwo">...annndddd Done!</h2>
+                <p>Your final score is <span id="final-score"></span>.</p>
+                <p>
+                    Enter your initials: <input type="text" id="initials" max="3" />
+                    <button id="submit">Submit</button>
+                </p>
+            </div>
+
+            <div id="feedback" class="feedback hide" class="fontThree"></div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="Assets/JS/questions.js"></script>
+    <script src="Assets/JS/logic.js"></script>
+    </body>
+</html>

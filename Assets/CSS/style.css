@@ -1,0 +1,109 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    background-image: url("https://wallpaperaccess.com/full/1092570.jpg");
+}
+
+a {
+    color:darkmagenta;
+    text-decoration:rgb(79, 206, 206);
+    transition: color 0.1s;
+    top: 50px;
+    left: 50px;
+    font-size: 140%;
+}
+
+a:hover{
+    color:darkturquoise;
+}
+
+button{
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 100%;
+    background-image: url("https://wallpaperaccess.com/full/1092570.jpg");
+    border-radius: 5ox;
+    padding: 2px 10px;
+    color:darkslateblue;
+    border: 0;
+    transition: background-color .002s;
+}
+
+button:hover {
+    background-color:darkturquoise;
+}
+
+.choices button {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 100%;
+}
+
+ol {
+    padding-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+li {
+    padding: 5px;
+    list-style: decimal inside none;
+}
+
+li:nth-child(odd){
+    background-color: darkturquoise
+}
+
+.wrapper {
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+    color: darkslateblue
+}
+.hide{
+    display: none;
+}
+
+.start{
+    text-align: center;
+}
+
+.start{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.feedback {
+    font-style: italic;
+    font-size: 150%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color:deeppink;
+    border-top: 2px solid darkslategray;
+    font-family: 'Luckiest Guy', cursive; 
+}
+
+.timer{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: darkmagenta;
+    font-size: 140%
+}
+
+.fontOne{
+    font-family: 'Train One', cursive;
+    color: darkmagenta
+}
+
+.fontTwo{
+    font-family: 'Francois One', sans-serif;
+    color:darkslateblue
+}
+
+.fontThree{
+    font-family: 'Luckiest Guy', cursive; 
+}
